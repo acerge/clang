@@ -10,11 +10,21 @@ As you might expect by now, C++11 enables list-initialization for C-style string
 
 string objects:
 
-char first\_date\[\] = {"Le Chapon Dodu"};
+```cpp
+char first_date[] = {"Le Chapon Dodu"};
+char second_date[] {"The Elegant Plate"};
+string third_date = {"The Bread Bowl"};
+string fourth_date {"Hank's Fine Eats"};
+```
 
-char second\_date\[\] {"The Elegant Plate"};
+```cpp
+struct inflatable goose; // keyword struct required in C
+inflatable vincent; // keyword struct not required in C++
+```
 
-string third\_date = {"The Bread Bowl"};
+```cpp
+enum spectrum {red, orange, yellow, green, blue, violet, indigo, ultraviolet};
+```
 
-string fourth\_date {"Hank's Fine Eats"};
+
 

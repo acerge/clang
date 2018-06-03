@@ -121,6 +121,19 @@ void print(double d, int width); // #2
 void print(long l, int width); // #3
 ```
 
+#### template function
+
+```
+template <typename T>
+void Swap(T &a, T &b)
+{
+    T temp;
+    temp = a;
+    a = b;
+    b = temp;
+}
+```
+
 #### reference variable
 
 ```cpp

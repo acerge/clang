@@ -105,3 +105,9 @@ it is pointing to. */
 
 
 
+### 1.4 C++ only feature about function
+
+
+
+
+

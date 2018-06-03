@@ -31,9 +31,7 @@ band = spectrum(3);
 enum bits{one = 1, two = 2, four = 4, eight = 8};
 ```
 
-![](/assets/const1.png)
-
-![](/assets/const2.png)
+### 1.3 const and pointer
 
 ```cpp
 //1.Pointer to const value:A pointer to a const value is a (non-const) pointer that points to a constant value.

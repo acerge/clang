@@ -31,15 +31,9 @@ band = spectrum(3);
 enum bits{one = 1, two = 2, four = 4, eight = 8};
 ```
 
-
-
 ![](/assets/const1.png)
 
 ![](/assets/const2.png)
-
-
-
-
 
 ```cpp
 //1.Pointer to const value:A pointer to a const value is a (non-const) pointer that points to a constant value.
@@ -75,7 +69,7 @@ const int *ptr = &value; // ptr points to a "const int"
 //1.7
 int value1 = 5;
 const int *ptr = &value1; // ptr points to a const int
- 
+
 int value2 = 6;
 ptr = &value2; // okay, ptr now points at some other const int
 
@@ -87,7 +81,7 @@ int *const ptr = &value;
 //2.2
 int value1 = 5;
 int value2 = 6;
- 
+
 int * const ptr = &value1; // okay, the const pointer is initialized to the address of value1
 ptr = &value2; // not okay, once initialized, a const pointer can not be changed.
 
@@ -103,18 +97,13 @@ const int *const ptr = &value;
 //3.To summarize, you only need to remember 4 rules, and they are pretty logical:
 
 /*
-    A non-const pointer can be redirected to point to other addresses.
-    A const pointer always points to the same address, and this address can not be changed. 
+A non-const pointer can be redirected to point to other addresses.
+A const pointer always points to the same address, and this address can not be changed. 
 
-    A pointer to a non-const value can change the value it is pointing to. These can not point to a const value.
-    A pointer to a const value treats the value as const (even if it is not), and thus can not change the value 
-    it is pointing to. */
-  
+A pointer to a non-const value can change the value it is pointing to. These can not point to a const value.
+A pointer to a const value treats the value as const (even if it is not), and thus can not change the value 
+it is pointing to. */
 ```
-
-
-
-
 
 
 

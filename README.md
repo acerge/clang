@@ -118,6 +118,20 @@ int rats = 101;
 int & rodents = rats; // rodents a reference
 int * prats = &rats; // prats a pointer
 
+void swapr(int &a, int &b) // use references
+{
+    int temp;
+    temp = a; // use a, b for values of variables
+    a = b;
+    b = temp;
+}
+void swapp(int *p, int *q) // use pointers
+{
+    int temp;
+    temp = *p; // use *p, *q for values of variables
+    *p = *q;
+    *q = temp;
+}
 ```
 
 

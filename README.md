@@ -113,6 +113,14 @@ it is pointing to. */
 char * left(const char * str, int n = 1);
 ```
 
+#### function overloading
+
+```cpp
+void print(const char * str, int width); // #1
+void print(double d, int width); // #2
+void print(long l, int width); // #3
+```
+
 #### reference variable
 
 ```cpp

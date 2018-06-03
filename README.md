@@ -132,6 +132,11 @@ void swapp(int *p, int *q) // use pointers
     *p = *q;
     *q = temp;
 }
+int wallet1 = 300;
+int wallet2 = 350;
+swapr(wallet1, wallet2); // pass variables
+swapp(&wallet1, &wallet2); // pass addresses of variables
+
 ```
 
 

@@ -103,11 +103,22 @@ A pointer to a const value treats the value as const (even if it is not), and th
 it is pointing to. */
 ```
 
-
-
 ### 1.4 C++ only feature about function
 
+inline function
 
+reference variable
+
+```cpp
+int rats;
+int & rodents = rats; // makes rodents an alias for rats
+rodents++;
+
+int rats = 101;
+int & rodents = rats; // rodents a reference
+int * prats = &rats; // prats a pointer
+
+```
 
 
 

@@ -283,8 +283,9 @@ const free_throws &accumulate2(free_throws &target, const free_throws &source)
 int tom = 3; // external variable definition, can be accessed from other files using "extern int tom;"
 int dick = 30; // external variable definition
 static int harry = 300; // static, internal linkage, only be accessed in this file
-
 ```
+
+![](/assets/func_link.png)
 
 
 

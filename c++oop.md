@@ -2,19 +2,7 @@
 
 ## ![](/assets/class_constructor.png)
 
-## 
-
-
-
-
-
-
-
-
-
-
-
-
+## 2、
 
 ## 
 

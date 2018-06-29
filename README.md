@@ -287,5 +287,9 @@ static int harry = 300; // static, internal linkage, only be accessed in this fi
 
 ![](/assets/func_link.png)
 
+## 1.6 string and cin
+
+![](/assets/string_cin.png)
+
 
 

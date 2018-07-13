@@ -1,5 +1,3 @@
-[https://blog.csdn.net/zhuxiaoyang2000/article/details/5575194](https://blog.csdn.net/zhuxiaoyang2000/article/details/5575194)
-
 GNU CC\(简称gcc\)是GNU项目中符合ANSI C标准的编译系统，能够编译用C、C++、Object C、Jave等多种语言编写的程序。gcc又可以作为交叉编译工具，它能够在当前CPU平台上为多种不同体系结构的硬件平台开发软件，非常适合在嵌入式领域的开发编译，如常用的arm-linux-gcc交叉编译工具
 
 通常后跟一些选项和文件名来使用GCC编译器。gcc命令的基本用法如下:
@@ -97,9 +95,11 @@ GCC支持数种调试和剖析选项，常用到的是-g和-pg。
 
 如：
 
-gccxxx.c-lm\(动态数学库\)
-
+```bash
+gcc  xxx.c -lm #(动态数学库)
 -lpthread
+
+```
 
 好了现在我们知道怎么得到库名了，比如我们自已要用到一个第三方提供的库名字叫libtest.so，那么我们只要把libtest.so拷贝到/usr/lib里，编译时加上-ltest参数，我们就能用上libtest.so库了（当然要用libtest.so库里的函数，我们还需要与libtest.so配套的头文件）。
 

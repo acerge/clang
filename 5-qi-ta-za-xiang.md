@@ -27,15 +27,21 @@ Creating cov.c.gcov
 
 ## 5.3 Identifying files
 
-When a source file has been compiled to an object file or executable the options used to compile it are no longer obvious. The file command looks at the contents of an object file or executable and determines some of its characteristics, such as whether it was compiled with dynamic or static linking.
+When a source file has been compiled to an object file or executable the  
+ options used to compile it are no longer obvious. The file command  
+ looks at the contents of an object file or executable and determines some  
+ of its characteristics, such as whether it was compiled with dynamic or  
+ static linking.
 
-For example, here is the result of the file command for a typical executable:
+For example, here is the result of the file command for a typical  
+ executable:
 
-`$ file a.out`
+`$ file a.out`
 
-`a.out: ELF 32-bit LSB executable, Intel 80386,`
+`a.out: ELF 32-bit LSB executable, Intel 80386,`
 
-`version 1 (SYSV), dynamically linked (uses shared libs), not stripped`
+`version 1 (SYSV), dynamically linked (uses shared  
+ libs), not stripped`
 
 ## 5.4 Examining the symbol table
 
@@ -57,6 +63,29 @@ $ nm  a.out
 08049590 b object.11
 0804948c d p.3
 U printf@GLIBC_2.0
+```
+
+## 5.5 Finding dynamically linked libraries
+
+When a program has been compiled using shared libraries it needs to load
+
+those libraries dynamically at run-time in order to call external functions.
+
+The command ldd examines an executable and displays a list of the shared
+
+libraries that it needs. These libraries are referred to as the shared library
+
+dependencies of the executable.
+
+For example, the following commands demonstrate how to find the
+
+shared library dependencies of the Hello World program:
+
+```
+$ gcc -Wall hello.c
+$ ldd a.out
+libc.so.6 => /lib/libc.so.6 (0x40020000)
+/lib/ld-linux.so.2 => /lib/ld-linux.so.2 (0x40000000)
 ```
 
 

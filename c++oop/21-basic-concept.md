@@ -45,7 +45,8 @@ public:
 
 ### 1.2.6 Friend non-member functions
 
-_**A friend function is a non-member function that has special rights to access private data members of any object of the class of whom it is a friend. **_
+_**A friend function is a non-member function that has special rights to access private data  
+ members of any object of the class of whom it is a friend. **_
 
 ```
 /*Beginning of friend.cpp*/

@@ -23,10 +23,8 @@ class Distance
 ### 1.2.4 Constant Member Functions
 
 ```
-
 void show(int=1);    //Default Values for Formal Arguments of Member Functions
 int getFeet() const; //should not be able to change the value of member data
-
 ```
 
 ### 1.2.5 Mutable Data Members
@@ -43,6 +41,30 @@ public:
         x++; //ERROR: cannot modify a non-constant data member in a constant member function
         y++; //OK: can modify a mutable data member in a constant member function
 }
+```
+
+### 1.2.6 Friend non-member functions
+
+_**A friend function is a non-member function that has special rights to access private data members of any object of the class of whom it is a friend. **_
+
+```
+/*Beginning of friend.cpp*/
+class A
+{
+    int x;
+public:
+    friend void abc(A&); //prototype of the friend function
+};
+void abc(A& AObj) //definition of the friend function
+{
+    AObj.x++; //accessing private members of the object
+}
+void main()
+{
+    A A1;
+    abc(A1);
+}
+/*End of friend.cpp
 ```
 
 

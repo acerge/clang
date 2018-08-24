@@ -68,5 +68,9 @@ void main()
 /*End of friend.cpp
 ```
 
+### 1.2.7 static member
+
+![](/assets/staticmember.png)
+
 
 

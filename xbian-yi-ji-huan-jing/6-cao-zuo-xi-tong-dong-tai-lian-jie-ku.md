@@ -46,9 +46,6 @@ cuda-8-0.conf            i386-linux-gnu_GL.conf  x86_64-linux-gnu.conf      x86_
 i386-linux-gnu_EGL.conf  libc.conf               x86_64-linux-gnu_EGL.conf  zz_i386-biarch-compat.conf
 
 ```
-
-
-
 ### X. 几个命令
 
 #### X.1 pmap - report memory map of a process

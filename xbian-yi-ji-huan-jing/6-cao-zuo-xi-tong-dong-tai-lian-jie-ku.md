@@ -64,9 +64,11 @@ fantasy@azgpuserver1:~$ ldd /lib/x86_64-linux-gnu/libcrypt-2.23.so
 #### X.3 ldconfig - config or print share lib 
 
 ```bash
+
 # 1) print current used lib in cache
 /sbin/ldconfig -p
 # 2) refresh config
 /sbin/ldconfig -v
+
 ```
 

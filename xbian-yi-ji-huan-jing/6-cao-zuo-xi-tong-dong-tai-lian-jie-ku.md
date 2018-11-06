@@ -55,10 +55,12 @@ i386-linux-gnu_EGL.conf  libc.conf               x86_64-linux-gnu_EGL.conf  zz_i
 #### X.2 ldd - print shared object dependencies
 
 ```bash
+
 fantasy@azgpuserver1:~$ ldd /lib/x86_64-linux-gnu/libcrypt-2.23.so 
         linux-vdso.so.1 =>  (0x00007fffccbfb000)
         libc.so.6 => /lib/x86_64-linux-gnu/libc.so.6 (0x00007f9d07668000)
         /lib64/ld-linux-x86-64.so.2 (0x00007f9d07c6a000)
+
 ```
 
 #### X.3 ldconfig - config or print share lib 

@@ -13,6 +13,7 @@
 4）安装自定义动态库：
 ```ldconfig -n directory_with_shared_libraries```
 
+5) 参考[链接](http://tldp.org/HOWTO/Program-Library-HOWTO/shared-libraries.html)
 
 
 ### 1.1 系统默认的动态链接库

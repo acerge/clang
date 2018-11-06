@@ -67,6 +67,6 @@ fantasy@azgpuserver1:~$ ldd /lib/x86_64-linux-gnu/libcrypt-2.23.so
 # 1) print current used lib in cache
 /sbin/ldconfig -p
 # 2) refresh config
-/sbin/ldconfig
+/sbin/ldconfig -v
 ```
 

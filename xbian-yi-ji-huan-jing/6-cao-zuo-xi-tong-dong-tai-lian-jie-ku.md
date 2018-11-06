@@ -6,7 +6,7 @@
 
 1）/usr/lib and /lib are hardcoded IIRC, 系统级的默认search path
 
-2）编译程序时，使用 -L -l
+2）编译程序时，使用 -L -l，参见[链接](/xbian-yi-ji-huan-jing/4-bian-yi-xiang-guan.md)
 
 3）LD_LIBRARY_PATH 指定特有的搜索路径
 
